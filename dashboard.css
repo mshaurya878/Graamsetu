@@ -1,0 +1,114 @@
+/* GraamSetu Dashboard CSS */
+
+.dashboard-wrapper {
+    display: flex;
+    min-height: calc(100vh - 75px);
+}
+
+.dashboard-sidebar {
+    width: 260px;
+    background-color: #ffffff;
+    border-right: 1px solid var(--gs-border);
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-heading {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #94A3B8;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    padding-left: 0.75rem;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+}
+
+.sidebar-menu-item {
+    margin-bottom: 0.35rem;
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0.7rem 0.9rem;
+    color: #475569;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.sidebar-link:hover, .sidebar-link.active {
+    background-color: rgba(224, 90, 16, 0.08);
+    color: var(--gs-primary);
+}
+
+.sidebar-link i {
+    font-size: 1.1rem;
+    width: 20px;
+    text-align: center;
+}
+
+.dashboard-content {
+    flex: 1;
+    padding: 2rem;
+    background-color: var(--gs-light);
+}
+
+/* Stat Cards */
+.stat-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid var(--gs-border);
+    box-shadow: var(--gs-card-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stat-value {
+    font-size: 1.85rem;
+    font-weight: 800;
+    color: var(--gs-dark);
+    line-height: 1;
+    margin-bottom: 0.3rem;
+}
+
+.stat-label {
+    font-size: 0.88rem;
+    color: #64748B;
+    font-weight: 500;
+}
+
+.stat-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+
+@media (max-width: 991.98px) {
+    .dashboard-wrapper {
+        flex-direction: column;
+    }
+    .dashboard-sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid var(--gs-border);
+    }
+    .dashboard-content {
+        padding: 1.25rem;
+    }
+}
